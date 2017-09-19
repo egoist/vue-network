@@ -26,7 +26,7 @@
   "poi": {
     "entry": "example/index.js",
     "dist": "example/dist",
-    "homepage": "/"
+    "homepage": "/vue-network/"
   },
   "dependencies": {},
   "devDependencies": {
