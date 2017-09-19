@@ -1,6 +1,6 @@
 {
   "name": "vue-network",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Render a Vue component to indicate the network status.",
   "repository": {
     "url": "egoist/vue-network",
@@ -20,7 +20,6 @@
     "build:example": "poi build",
     "gh": "gh-pages -d example/dist",
     "deploy": "npm run build:example && npm run gh"
-
   },
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
@@ -39,7 +38,11 @@
   },
   "xo": {
     "extends": "rem/prettier",
-    "envs": ["browser"],
-    "ignores": ["example/**"]
+    "envs": [
+      "browser"
+    ],
+    "ignores": [
+      "example/**"
+    ]
   }
 }
