@@ -43,6 +43,20 @@ export default {
 
 - `changedOnly`: Only show slots after network status is changed, i.e. render nothing on the first render.
 
+### Events
+
+- `changed<online>`: Emitted after network status is changed, eg:
+
+```vue
+<network @changed="handleNetworkChanged"></network>
+```
+
+```js
+function handleNetworkChanged(online) {
+  console.log(online)
+}
+```
+
 ## Contributing
 
 1. Fork it!
