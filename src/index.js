@@ -18,7 +18,7 @@ const Network = {
 
   beforeDestroy() {
     window.removeEventListener('online', this.whenOnline)
-    window.removeEventListener('online', this.whenOffline)
+    window.removeEventListener('offline', this.whenOffline)
   },
 
   methods: {
