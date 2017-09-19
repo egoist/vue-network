@@ -22,7 +22,7 @@ CDN: [UNPKG](https://unpkg.com/vue-network/dist/) | [jsDelivr](https://cdn.jsdel
 </template>
 
 <script>
-import Network from 'vu-network'
+import Network from 'vue-network'
 
 export default {
   components: {
