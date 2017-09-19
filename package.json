@@ -1,0 +1,45 @@
+{
+  "name": "vue-network",
+  "version": "0.0.0",
+  "description": "Render a Vue component to indicate the network status.",
+  "repository": {
+    "url": "egoist/vue-network",
+    "type": "git"
+  },
+  "main": "dist/vue-network.js",
+  "module": "dist/vue-network.es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "npm run lint && echo 'no tests!'",
+    "lint": "xo",
+    "prepublish": "npm run build",
+    "build": "bili --format umd,es --module-name VueNetwork",
+    "example": "poi",
+    "build:example": "poi build",
+    "gh": "gh-pages -d example/dist",
+    "deploy": "npm run build:example && npm run gh"
+
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "poi": {
+    "entry": "example/index.js",
+    "dist": "example/dist",
+    "homepage": "/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-config-rem": "^3.0.0",
+    "xo": "^0.18.0",
+    "gh-pages": "^1.0.0",
+    "poi": "^9.1.4",
+    "bili": "^0.17.0"
+  },
+  "xo": {
+    "extends": "rem/prettier",
+    "envs": ["browser"],
+    "ignores": ["example/**"]
+  }
+}
